@@ -1247,6 +1247,7 @@ public class VideoActivity extends PlaybackActivity implements VodPlaybackHost, 
     @Override
     protected void onSizeChanged(VideoSize size) {
         mBinding.widget.size.setText(player().getSizeText());
+        mBinding.widget.size.setVisibility(View.VISIBLE);
     }
 
     @Override
